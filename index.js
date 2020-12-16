@@ -32,7 +32,7 @@ client.on('message', (message) => {
     message.reply('pong 아모르파티');
   }
   if(message.content == '-') {
-    b = Math.floor(Math.random() * 100)+1;
+    var b = Math.floor(Math.random() * 100)+1;
     message.reply(b);
     a.push(b);
   }
