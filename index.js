@@ -29,7 +29,7 @@ client.on("guildMemberRemove", (member) => {
 
 client.on('message', (message) => {
   if(message.content == 'p') {
-    message.reply('pong addtest13');
+    message.reply('pong addtest14');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -40,8 +40,9 @@ client.on('message', (message) => {
     a = new Array();
   }
   if(message.content == '=') {
+    message.send(a);
     var reset = a.reverse();
-    for(var i =0; i<a.length; i++){
+    for(var i =0; i<reset.length; i++){
       message.send(reset[i]);
     }
   }
