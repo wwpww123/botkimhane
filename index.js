@@ -29,12 +29,20 @@ client.on("guildMemberRemove", (member) => {
 
 client.on('message', (message) => {
   if(message.content == 'ping') {
-    message.reply('pong 아모르파티');
+    message.reply('pong addtest12');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
     message.reply(b);
     a.push(b);
+  }
+  if(message.content == 'r') {
+    a = new Array();
+  }
+  if(message.content == '=') {
+    for(var i =0; i<a.length; i++){
+      message.reply(a[i]);
+    }
   }
 });
 
