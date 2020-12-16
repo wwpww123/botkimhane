@@ -33,8 +33,8 @@ client.on('message', (message) => {
   if(message.content == "-")
   {
     a = RandomSource(1,100);
-    message.send(a);
-    message.send('시발 머');
+    message.reply(a);
+    message.react('시발 머');
   }
 });
 
