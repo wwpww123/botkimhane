@@ -28,7 +28,7 @@ client.on("guildMemberRemove", (member) => {
 
 client.on('message', (message) => {
   if(message.content == 'ping') {
-    message.reply('pong');
+    message.reply('pong 아모르파티');
   }
   if(message.content == "-")
   {
