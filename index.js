@@ -5,6 +5,7 @@ const welcomeChannelName = "joinout";
 const byeChannelName = "joinout";
 const welcomeChannelComment = "어서오세요.";
 const byeChannelComment = "안녕히가세요.";
+var a = [];
 
 client.on('ready', () => {
   console.log('켰다.');
@@ -31,9 +32,9 @@ client.on('message', (message) => {
     message.reply('pong 아모르파티');
   }
   if(message.content == '-') {
-    
-    
-    message.reply('아놔');
+    a = Math.floor(Math.random() * 100)+1;
+    message.reply(a);
+    a.push(a);
   }
 });
 
