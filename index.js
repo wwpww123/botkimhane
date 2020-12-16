@@ -30,7 +30,7 @@ client.on('message', (message) => {
   if(message.content == 'ping') {
     message.reply('pong 아모르파티');
   }
-  if(message.content == "-")
+  if(message.content == '-')
   {
     a = RandomSource(1,100);
     message.reply(a);
