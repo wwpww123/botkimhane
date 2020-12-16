@@ -29,7 +29,7 @@ client.on("guildMemberRemove", (member) => {
 
 client.on('message', (message) => {
   if(message.content == 'p') {
-    message.reply('pong addtest16');
+    message.reply('pong addtest17');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -37,13 +37,14 @@ client.on('message', (message) => {
     a.push(b);
   }
   if(message.content == 'r') {
-    a = new Array();
+    a.length =0;
     message.send('초기화 했다')
   }
   if(message.content == '=') {
     message.send(a);
-    
-    message.send(a);
+    for(var i =0; i<a.length; i++){
+      message.send(a[i]);
+    }
     
   }
 });
