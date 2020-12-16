@@ -5,7 +5,7 @@ const welcomeChannelName = "joinout";
 const byeChannelName = "joinout";
 const welcomeChannelComment = "어서오세요.";
 const byeChannelComment = "안녕히가세요.";
-var a = [];
+var a = new Array();
 
 client.on('ready', () => {
   console.log('켰다.');
@@ -29,7 +29,7 @@ client.on("guildMemberRemove", (member) => {
 
 client.on('message', (message) => {
   if(message.content == 'p') {
-    message.reply('pong addtest15');
+    message.reply('pong addtest16');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -42,7 +42,7 @@ client.on('message', (message) => {
   }
   if(message.content == '=') {
     message.send(a);
-    a.sort(function(a, b){return b- a});
+    
     message.send(a);
     
   }
