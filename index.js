@@ -31,9 +31,9 @@ client.on('message', (message) => {
     message.reply('pong 아모르파티');
   }
   if(message.content == '-') {
-    a = RandomSource(1,100);
-    message.reply(a);
-    message.reply('시발 머');
+    
+    
+    message.reply('아놔');
   }
 });
 
