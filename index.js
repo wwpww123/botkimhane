@@ -33,7 +33,7 @@ client.on('message', (message) => {
   if(message.content === "-")
   {
     a = RandomSource(1,100);
-    message.reply(a);
+    message.send(a);
   }
 });
 
