@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const token = process.env.token;
 const welcomeChannelName = "joinout";
 const byeChannelName = "joinout";
+const diceChannelName = "testing";
 const welcomeChannelComment = "어서오세요.";
 const byeChannelComment = "안녕히가세요.";
 var a = new Array();
@@ -29,22 +30,18 @@ client.on("guildMemberRemove", (member) => {
 
 client.on('message', (message) => {
   if(message.content == 'p') {
-    message.reply('pong addtest17');
+    message.reply('pong addtest18');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
     message.reply(b);
     a.push(b);
-  }
-  if(message.content == 'r') {
-    a.length =0;
-    message.send('초기화 했다')
-  }
+  }  
   if(message.content == '=') {
-    message.send(a);
-    for(var i =0; i<a.length; i++){
-      message.send(a[i]);
-    }
+    
+    const diceChannel = guild.channels.find(channel => channel.name == diceChannelName);
+
+    diceChannel.send(a);
     
   }
 });
