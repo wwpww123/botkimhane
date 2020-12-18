@@ -32,11 +32,11 @@ client.on('message', (message) => {
   var a = new Array();
 
   if(message.content == 'p') {
-    message.reply('pong addtest22');
+    message.reply('pong addtest24');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
-    message.reply(`<@${deleteUser.id}> ' 의 번호는 : '${b}`);
+    message.reply(`' 의 번호는 : '${b}`);
     a.push(b);
   }  
   if(message.content == 'y') {
