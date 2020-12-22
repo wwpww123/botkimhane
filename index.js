@@ -32,7 +32,7 @@ client.on('message', (message) => {
   
 
   if(message.content == 'p') {
-    message.reply('pong addtest27');
+    message.reply('pong addtest28');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -41,6 +41,9 @@ client.on('message', (message) => {
   }  
   if(message.content == '=') {
     message.channel.send(a);
+
+    let result = a.sort((u,k) => k-u);
+    message.channel.send(result);
     
   }
   if(message.content == 'r') {
