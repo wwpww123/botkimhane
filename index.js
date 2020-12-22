@@ -6,7 +6,7 @@ const byeChannelName = "joinout";
 const diceChannelName = "testing";
 const welcomeChannelComment = "어서오세요.";
 const byeChannelComment = "안녕히가세요.";
-
+var a = new Array();
 
 client.on('ready', () => {
   console.log('켰다.');
@@ -29,15 +29,15 @@ client.on("guildMemberRemove", (member) => {
 });
 
 client.on('message', (message) => {
-  var a = new Array();
+  
 
   if(message.content == 'p') {
-    message.reply('pong addtest26');
+    message.reply('pong addtest27');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
     message.reply(` 번호 : ${b} 기억 잘해라잉 정렬 안된다`);
-    a.push(b);
+    a.push(`${b}`);
   }  
   if(message.content == '=') {
     message.channel.send(a);
