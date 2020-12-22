@@ -32,7 +32,7 @@ client.on('message', (message) => {
   
 
   if(message.content == 'p') {
-    message.reply('pong addtest29');
+    message.reply('pong addtest30');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -40,10 +40,11 @@ client.on('message', (message) => {
     a.push(`${b}`);
   }  
   if(message.content == '=') {
-    message.channel.send(a);
-
+    
     let result = a.sort((u,k) => k-u);
-    message.channel.send(result);
+    for(var i = 0; i < result.length; i++){
+      message.channel.send(`${i+1}등 번호는 ${a[i]} 입니다`)
+    }
     
   }
   if(message.content == 'r') {
@@ -51,13 +52,14 @@ client.on('message', (message) => {
     message.channel.send('리셋함');
   }
   if(message.content == 'q'){
-    let result = a.sort((u,k) => k-u);
+    
     message.channel.send(result);
     message.channel.send('정렬해보자');
 
-    for(var i = 0; i < a.length; i++){
-      message.channel.send(`${i+1}등 번호는 ${a[i]} 입니다`)
-    }
+    
+  }
+  if(message.content == '명령어'){
+    message.channel.send(' -는 숫자뽑기 /n r은 리셋 /n = 는 정렬');
   }
 });
 
