@@ -32,19 +32,20 @@ client.on('message', (message) => {
   var a = new Array();
 
   if(message.content == 'p') {
-    message.reply('pong addtest25');
+    message.reply('pong addtest26');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
     message.reply(` 번호 : ${b} 기억 잘해라잉 정렬 안된다`);
     a.push(b);
   }  
-  if(message.content == 'y') {
+  if(message.content == '=') {
+    message.channel.send(a);
     
-    const diceChannel = guild.channels.find(channel => channel.name == diceChannelName);
-
-    diceChannel.reply(a);
-    
+  }
+  if(message.content == 'r') {
+    a = new Array();
+    message.channel.send('리셋함');
   }
 });
 
