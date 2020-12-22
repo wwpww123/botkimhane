@@ -32,7 +32,7 @@ client.on('message', (message) => {
   
 
   if(message.content == 'p') {
-    message.reply('pong addtest28');
+    message.reply('pong addtest29');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -49,6 +49,15 @@ client.on('message', (message) => {
   if(message.content == 'r') {
     a = new Array();
     message.channel.send('리셋함');
+  }
+  if(message.content == 'q'){
+    let result = a.sort((u,k) => k-u);
+    message.channel.send(result);
+    message.channel.send('정렬해보자');
+
+    for(var i = 0; i < a.length; i++){
+      message.channel.send(`${i+1}등 번호는 ${a[i]} 입니다`)
+    }
   }
 });
 
