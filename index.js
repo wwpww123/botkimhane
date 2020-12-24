@@ -32,7 +32,7 @@ client.on('message', (message) => {
   
 
   if(message.content == 'p') {
-    message.reply('pong addtest31');
+    message.reply('pong addtest32');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -52,10 +52,14 @@ client.on('message', (message) => {
     message.channel.send('리셋함');
   }
   if(message.content == '명령어'){
-    message.channel.send(' -는 숫자뽑기');
-    message.channel.send(' r은 리셋');
-    message.channel.send(' = 는 정렬');
-    message.channel.send(' 중복검사 안됌 누구꺼 번호인지 멘션안됌 ^^ ');
+    message.channel.send(' -는 숫자뽑기 \n r은 리셋 \n = 는 정렬 \n 중복검사 안됌 누구꺼 번호인지 멘션안됌 ^^');   
+   
+  }
+
+  if(message.content == 'oi'){
+    var b = Math.floor(Math.random() * 100)+1;
+    message.reply(` 번호 : ${b} 기억 잘해라잉 정렬 안된다`);
+    a.push(`${b} <@${deleteUser.id}> `)
   }
 });
 
