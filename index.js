@@ -32,7 +32,7 @@ client.on('message', (message) => {
   
 
   if(message.content == 'p') {
-    message.reply('pong addtest32');
+    message.reply('pong addtest33');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -56,10 +56,10 @@ client.on('message', (message) => {
    
   }
 
-  if(message.content == 'oi'){
+  if(message.content == 'k'){
     var b = Math.floor(Math.random() * 100)+1;
     message.reply(` 번호 : ${b} 기억 잘해라잉 정렬 안된다`);
-    a.push(`${b} <@${deleteUser.id}> `)
+    a.push(`${b} <@${user.id}> `)
   }
 });
 
