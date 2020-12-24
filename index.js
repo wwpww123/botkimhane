@@ -32,7 +32,7 @@ client.on('message', (message) => {
   
 
   if(message.content == 'p') {
-    message.reply('pong addtest35');
+    message.reply('pong addtest36');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -59,14 +59,14 @@ client.on('message', (message) => {
   if(message.content == 'k'){
     var b = Math.floor(Math.random() * 100)+1;
     message.reply(` 번호 : ${b} 기억 잘해라잉 정렬 안된다`);
-    k = message.author.username;
-    a.push(`${b} <@${k}> `)
+    k = message.author.id;
+    a.push(`${b} < <!@${k}> > `)
     
   }
   if(message.content == '/'){
     var b = Math.floor(Math.random() * 100)+1;
     message.reply(` 번호 : ${b} 기억 잘해라잉 정렬 안된다`);
-    k = message.author.username;
+    k = message.author.id;
     message.channel.send(k);
     
   }
