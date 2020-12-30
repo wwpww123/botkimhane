@@ -32,7 +32,7 @@ client.on('message', (message) => {
   
 
   if(message.content == 'p') {
-    message.reply('pong addtest37');
+    message.reply('pong addtest38');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
