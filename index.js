@@ -32,7 +32,7 @@ client.on('message', (message) => {
   
 
   if(message.content == 'p') {
-    message.reply('pong addtest36');
+    message.reply('pong addtest37');
   }
   if(message.content == '-') {
     var b = Math.floor(Math.random() * 100)+1;
@@ -68,7 +68,22 @@ client.on('message', (message) => {
     message.reply(` 번호 : ${b} 기억 잘해라잉 정렬 안된다`);
     k = message.author.id;
     message.channel.send(k);
+    format
     
+  }
+  if(message.content == '묵찌빠'){
+    var mjf = Math.floor(Math.random() * 2)+1;
+    if( mjf = 1){
+      message.reply(` 찌찌찌찌찌찌찌뽕~`);
+      
+    }
+    if(mjf = 2){
+      message.reply(` 빠빠빠빠빠빠삐삐빠삐코`);
+    }
+    if(mjf = 3){
+      message.reply(`무무무무도토리묵묵`);
+    }
+
   }
 });
 
